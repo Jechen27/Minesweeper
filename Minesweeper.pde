@@ -48,6 +48,8 @@ public void displayLosingMessage()
     String lose = "YOU LOSE!";
     for (int i=0;i<lose.length();i++)
     buttons[(int)(NUM_ROWS/2)-1][(int)(NUM_COLS/2)-(int)(lose.length()/2)+i].setLabel(lose.substring(i,i+1));
+    for (MSButton b : bombs)
+    b.clicked = true;
 }
 public void displayWinningMessage()
 {
