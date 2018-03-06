@@ -47,13 +47,13 @@ public void displayLosingMessage()
 {
     String lose = "YOU LOSE!";
     for (int i=0;i<lose.length();i++)
-    buttons[NUM_ROWS/2-1][NUM_COLS/2-lose.length()/2+i].setLabel(lose.substring(i,i+1));
+    buttons[(int)(NUM_ROWS/2)-1][(int)(NUM_COLS/2)-lose.length()/2+i].setLabel(lose.substring(i,i+1));
 }
 public void displayWinningMessage()
 {
     String win = "YOU WIN!";
     for (int i=0;i<win.length();i++)
-    buttons[NUM_ROWS/2-1][NUM_COLS/2-win.length()/2+i].setLabel(win.substring(i,i+1));
+    buttons[(int)(NUM_ROWS/2)-1][(int)(NUM_COLS/2)-win.length()/2+i].setLabel(win.substring(i,i+1));
 }
 
 public class MSButton
