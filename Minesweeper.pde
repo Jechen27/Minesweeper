@@ -97,7 +97,7 @@ public class MSButton
         else if (bombs.contains(this))
         displayLosingMessage();
         else if (countBombs(r,c)>0)
-        label = Integer.toString(countBombs(r,c));
+        label = ""+countBombs(r,c);
         else
         for (int row=-1;row<=1;row++)
         for (int col=-1;col<=1;col++)
